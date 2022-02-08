@@ -1,0 +1,151 @@
+body {
+  background: linear-gradient(
+    to top,
+    rgba(0, 180, 216),
+    rgba(144, 224, 239),
+    rgba(202, 240, 248)
+  );
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+====================================
+header
+====================================
+ */
+
+.linksContainer {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  margin-left: -2rem;
+}
+
+.navSocial {
+  display: none;
+}
+
+.show-container {
+  height: 14rem;
+}
+
+.navigationHeader h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 3px solid white;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn {
+  cursor: pointer;
+  background: transparent;
+  margin-right: -2rem;
+  border: transparent;
+  font-size: 25px;
+  color: rgba(14, 118, 150, 0.671);
+  filter: drop-shadow(0 3px 3px lightblue);
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  transform: rotate(90deg);
+}
+
+.navigationHeader {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.navLinks {
+  list-style: none;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 2rem;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: white;
+}
+
+.navLinks li {
+  margin-bottom: 1rem;
+}
+
+.navigationCenter {
+  width: 90%;
+  max-width: 1170px;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .btn {
+    display: none;
+  }
+
+  .navigationCenter {
+    display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    height: 7rem;
+  }
+
+  .navigationHeader {
+    padding: 0;
+  }
+
+  .linksContainer {
+    height: auto !important;
+  }
+
+  .navLinks {
+    display: flex;
+  }
+
+  .navLinks a {
+    margin: 0.5rem;
+    transition: all 0.3s linear;
+  }
+
+  .navLinks a:hover {
+    color: gray;
+  }
+
+  .navSocial {
+    display: grid;
+  }
+
+  .navSocial a {
+    align-items: end;
+    margin: 0 0.5rem;
+    color: white;
+    transition: all 0.3s linear;
+  }
+
+  .navSocial a:hover {
+    color: gray;
+  }
+
+  .navSocial li {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    margin-right: -5rem;
+  }
+}
+
+/* 
+====================================
+End of header
+====================================
+ */
